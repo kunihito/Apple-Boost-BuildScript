@@ -42,9 +42,9 @@ math metaparse mpi program_options python random regex serialization signals2
 system test thread timer type_erasure wave"
 BOOTSTRAP_LIBS=""
 
-MIN_IOS_VERSION=11.0
+MIN_IOS_VERSION=10.0
 
-MIN_TVOS_VERSION=11.0
+MIN_TVOS_VERSION=10.0
 TVOS_SDK_PATH=$(xcrun --sdk appletvos --show-sdk-path)
 TVOSSIM_SDK_PATH=$(xcrun --sdk appletvsimulator --show-sdk-path)
 
@@ -52,8 +52,8 @@ MIN_MACOS_VERSION=10.12
 MACOS_SDK_PATH=$(xcrun --sdk macosx --show-sdk-path)
 
 MACOS_ARCHS=("x86_64")
-IOS_ARCHS=("armv7" "arm64")
-IOS_SIM_ARCHS=("i386" "x86_64")
+IOS_ARCHS=("arm64")
+IOS_SIM_ARCHS=("x86_64")
 
 # Applied to all platforms
 CXX_FLAGS="-std=c++14 -stdlib=libc++"
